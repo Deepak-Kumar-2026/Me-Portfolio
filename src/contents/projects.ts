@@ -11,8 +11,8 @@ export const projects: Project[] = [
         image: '/projects/e-commerce-website.png',
       },
       {
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates.',
+        title: 'Smart Agure System',
+        description: 'A application with real-time updates.',
         technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
         githubLink: 'https://github.com/Deepak-Kumar-2026',
         demoLink: 'https://demo.com',
@@ -50,14 +50,14 @@ export const projects: Project[] = [
         demoLink: 'https://demo.com',
         image: '/projects/chat-app.png',
       },
-      {
-        title: 'Smart Agure System',
-        description: 'A recipe search application using the Edamam API.',
-        technologies: ['React', 'NodeJs', 'ExpressJs','Js'],
-        githubLink: 'https://github.com/Deepak-Kumar-2026',
-        demoLink: 'https://demo.com',
-        image: '/projects/recipe-finder.png',
-      },
+      // {
+      //   title: 'Smart Agure System',
+      //   description: 'A recipe search application using the Edamam API.',
+      //   technologies: ['React', 'NodeJs', 'ExpressJs','Js'],
+      //   githubLink: 'https://github.com/Deepak-Kumar-2026',
+      //   demoLink: 'https://demo.com',
+      //   image: '/projects/recipe-finder.png',
+      // },
       {
         title: 'Expense Tracker',
         description: 'A personal finance tracker to manage expenses and income.',
