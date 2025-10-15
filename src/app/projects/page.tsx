@@ -1,0 +1,134 @@
+'use client'
+
+import { projects } from '@/contents/projects'
+import Image from 'next/image'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
+
+export default function Projects() {
+  return (
+    <section className="py-20 bg-gray-50 dark:bg-dark">
+      <div className="container max-w-7xl mx-auto px-4">
+        {/* Section Header */}
+        <motion.h2 
+          className="text-4xl font-bold mb-4 text-center text-gray-900 dark:text-white"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          My Projects
+        </motion.h2>
+        <motion.p 
+          className="text-lg text-gray-600 dark:text-gray-300 mb-16 text-center max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Here are some of my recent projects. Click on the links to view the code or live demo.
+        </motion.p>
+
+        {/* Project Grid */}
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          variants={staggerContainer}
+          initial="initial"
+          animate="animate"
+        >
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              className="bg-white dark:bg-dark/50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              variants={fadeInUp}
+              {...cardHoverSmall}
+            >
+              {/* Project Image */}
+              <motion.div 
+                className="relative aspect-video w-full overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover w-full h-full"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </motion.div>
+
+              {/* Project Details */}
+              <div className="p-6">
+                <motion.h3 
+                  className="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  {project.title}
+                </motion.h3>
+                <motion.p 
+                  className="text-gray-600 dark:text-gray-300 mb-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  {project.description}
+                </motion.p>
+
+                {/* Technologies */}
+                <motion.div 
+                  className="flex flex-wrap gap-2 mb-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  {project.technologies.map((tech, techIndex) => (
+                    <motion.span
+                      key={techIndex}
+                      className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </motion.div>
+
+                {/* Links */}
+                <motion.div 
+                  className="flex gap-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <motion.a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors font-medium"
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <FaGithub className="h-5 w-5" />
+                    <span>Code</span>
+                  </motion.a>
+                  <motion.a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors font-medium"
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <FaExternalLinkAlt className="h-5 w-5" />
+                    <span>Live Demo</span>
+                  </motion.a>
+                </motion.div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  )
+}
