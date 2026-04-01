@@ -59,7 +59,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deepak Kumar | MERN Stack Developer Portfolio",
+  title: "CodeWithDeepak | MERN Stack Developer Portfolio",
   description: "Deepak Kumar portfolio. MERN Stack Developer with React, Node.js, MongoDB projects.",
   
   verification: {
