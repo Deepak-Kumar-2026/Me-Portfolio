@@ -401,7 +401,7 @@ export default function About() {
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
 
             <span className="text-sm font-medium text-slate-600 dark:text-slate-300">
-              Full Stack Developer
+            CodeWithDeepak - Full Stack Developer
             </span>
 
           </div>
