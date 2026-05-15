@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://me-portfolio-24nq.vercel.app/sitemap.xml
