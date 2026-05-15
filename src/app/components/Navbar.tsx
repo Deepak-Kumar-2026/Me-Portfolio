@@ -21,11 +21,22 @@ export default function Navbar() {
   const toggleMobileMenu = () =>
     setIsMobileMenuOpen(!isMobileMenuOpen)
 
-  const menuItems = [
+//   const menuItems = [
+//   { href: '/', label: 'Home' },
+//   { href: '/about', label: 'About' },
+//   { href: '/projects', label: 'Projects' },
+//   { href: '/blogs', label: 'Experience' },
+//   { href: '/achievements', label: 'Achievements' },
+//   { href: '/certificates', label: 'Certificates' },
+//   { href: '/contact', label: 'Contact' },
+// ]
+
+const menuItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: '/blogs', label: 'My Journey' },
+  { href: '/learning-hub', label: 'Learning Hub' },
+  { href: '/blogs', label: 'Experience' },
   { href: '/achievements', label: 'Achievements' },
   { href: '/certificates', label: 'Certificates' },
   { href: '/contact', label: 'Contact' },

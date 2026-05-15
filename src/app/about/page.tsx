@@ -547,17 +547,24 @@ export default function About() {
               {/* University Image */}
               <div className="relative w-full h-64 md:h-80 rounded-3xl overflow-hidden mb-10 shadow-xl">
 
-                <Image
+                {/* <Image
                   src="/university/ikgptu.jpg"
                   alt="IKGPTU Jalandhar"
                   fill
                   priority
                   className="object-cover"
-                />
+                /> */}
 
+<Image
+  src="/university/ikgptu-new.jpg"
+  alt="IKGPTU Jalandhar"
+  fill
+  priority
+  className="object-cover"
+/>
               </div>
 
-              {/* Education Content */}
+              {/* Education Content
               <div className="text-center">
 
                 <h3 className="text-3xl md:text-4xl font-black mb-4 text-slate-800 dark:text-white">
@@ -585,7 +592,37 @@ export default function About() {
 
                 </p>
 
-              </div>
+              </div> */}
+
+              {/* Education Content */}
+<div className="text-center">
+
+  <h3 className="text-3xl md:text-4xl font-black mb-4 text-slate-800 dark:text-white">
+
+    Bachelor of Technology in Computer Science
+
+  </h3>
+
+  <p className="text-cyan-600 font-semibold text-lg md:text-xl mb-6">
+
+    Baba Banda Singh Bahadur Engineering College, Fatehgarh Sahib, Punjab • 2022 - 2026
+
+  </p>
+
+  <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+
+    Pursuing a Bachelor of Technology degree with a strong focus on full-stack web development,
+    scalable backend systems, modern frontend technologies, and real-world software engineering.
+
+    <br />
+    <br />
+
+    Continuously building production-ready MERN stack applications while exploring
+    Artificial Intelligence, WordPress Development, UI/UX systems, and modern developer workflows.
+
+  </p>
+
+</div>
 
             </div>
 

@@ -1,14 +1,5 @@
 export const achievements = [
-  {
-   
-  title: "College Level Hackathon Finalist",
-  description:
-    "Recognized for developing an innovative full-stack web application during a college-level hackathon competition focused on real-world problem solving, teamwork, and modern development technologies.",
-  image: "/achievements/hackathon.jpg",
-  badge: "Hackathon",
-  year: "2025",
-
-  },
+ 
 
   {
     title: "Google Cloud Arcade Program",
