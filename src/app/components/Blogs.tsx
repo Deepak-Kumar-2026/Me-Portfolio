@@ -157,7 +157,7 @@ export default function Blogs() {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-cyan-600 via-blue-600 to-emerald-600 bg-clip-text text-transparent">
-            My Journey & Updates
+            My Technical Expertise & Updates
           </h2>
 
           <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed">
