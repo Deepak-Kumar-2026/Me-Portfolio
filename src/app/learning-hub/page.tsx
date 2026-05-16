@@ -716,22 +716,27 @@ export default function LearningHub() {
           </div> */}
 
           {/* CARD 3 */}
-<div className="
-  group
-  relative
-  overflow-hidden
-  bg-white/80
-  backdrop-blur-xl
-  rounded-[32px]
-  p-8
-  shadow-xl
-  border
-  border-blue-100
-  hover:-translate-y-3
-  hover:shadow-blue-300/40
-  transition-all
-  duration-500
-">
+
+ {/* CARD 3 */}
+<a
+  href="/interview-preparation"
+  className="
+    group
+    relative
+    overflow-hidden
+    bg-white/80
+    backdrop-blur-xl
+    rounded-[32px]
+    p-8
+    shadow-xl
+    border
+    border-blue-100
+    hover:-translate-y-3
+    hover:shadow-blue-300/40
+    transition-all
+    duration-500
+  "
+>
 
   {/* Glow Effect */}
   <div className="
@@ -798,7 +803,55 @@ export default function LearningHub() {
 
   </p>
 
-  {/* Bottom Badge */}
+  {/* Features */}
+  <div className="
+    relative
+    z-10
+    mt-6
+    flex
+    flex-wrap
+    gap-3
+  ">
+
+    <span className="
+      px-3
+      py-1
+      rounded-full
+      bg-blue-50
+      text-blue-700
+      text-sm
+      font-semibold
+    ">
+      DSA
+    </span>
+
+    <span className="
+      px-3
+      py-1
+      rounded-full
+      bg-cyan-50
+      text-cyan-700
+      text-sm
+      font-semibold
+    ">
+      HR Round
+    </span>
+
+    <span className="
+      px-3
+      py-1
+      rounded-full
+      bg-indigo-50
+      text-indigo-700
+      text-sm
+      font-semibold
+    ">
+      Resume
+    </span>
+
+  </div>
+
+  {/* Bottom Button */}
   <div className="
     relative
     z-10
@@ -806,20 +859,24 @@ export default function LearningHub() {
     inline-flex
     items-center
     gap-2
-    px-4
-    py-2
+    px-5
+    py-3
     rounded-full
     bg-blue-50
     text-blue-700
-    font-semibold
+    font-bold
     text-sm
+    group-hover:bg-blue-600
+    group-hover:text-white
+    transition-all
+    duration-300
   ">
 
     Start Preparation →
 
   </div>
 
-</div>
+</a>
 
           {/* CARD 4 */}
           <div className="
